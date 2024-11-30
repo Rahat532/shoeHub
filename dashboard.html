@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>User Dashboard</h1>
+        <div class="dashboard-buttons">
+            <button id="logout-button">Logout</button>
+            <button id="main-page-button">ShoeHub</button>
+        </div>
+    </header>
+    <main>
+        <section class="user-management">
+            <h1>User List</h1>
+            <table id="user-table">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Name</th>
+                        <th>Password</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- User rows will be dynamically added here -->
+                </tbody>
+            </table>
+            <button id="add-user-btn">Add User</button>
+        </section>
+    </main>
+
+    <!-- Modal for Adding User -->
+    <div id="add-user-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Add User</h3>
+            <form id="add-user-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Add User</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

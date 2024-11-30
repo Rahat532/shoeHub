@@ -1,0 +1,106 @@
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+/* Form Container Styling */
+#login-form, #signup-form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 90%;
+    padding: 30px 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Heading Styling */
+h2 {
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input Field Styling */
+input {
+    height: 45px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* Link Styling */
+p {
+    margin: 15px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+p a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    #login-form, #signup-form {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
+

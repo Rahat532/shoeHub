@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5e1dd;
+    color: #333;
+}
+
+header {
+    background-color: #1a72de;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/* Styles for Dashboard Buttons */
+.dashboard-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.dashboard-buttons button {
+    background-color: #6c14d0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.dashboard-buttons button:hover {
+    background-color: #c72092;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+/* User Management Section */
+.user-management {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#user-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#user-table th, #user-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#user-table th {
+    background-color: #6c14d0;
+    color: white;
+}
+
+#user-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#user-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    background-color: #6c14d0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c72092;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    text-align: center;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-content .close:hover {
+    color: red;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    width: 50%;
+}
