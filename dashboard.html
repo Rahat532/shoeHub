@@ -22,7 +22,7 @@
                     <tr>
                         <th>Email</th>
                         <th>Name</th>
-                        <th>Password</th>
+                        <th>Password</th> <!-- New Password Column -->
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -44,6 +44,18 @@
                 <input type="email" id="email" placeholder="Email" required>
                 <input type="password" id="password" placeholder="Password" required>
                 <button type="submit">Add User</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Updating Password -->
+    <div id="update-password-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Update Password</h3>
+            <form id="update-password-form">
+                <input type="password" id="new-password" placeholder="New Password" required>
+                <button type="submit">Update Password</button>
             </form>
         </div>
     </div>

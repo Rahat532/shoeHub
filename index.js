@@ -100,6 +100,33 @@ async function run() {
       }
     });
 
+    // Update Password Route
+    app.patch("/users/:email/password", async (req, res) => {
+      const { email } = req.params;
+      const { password } = req.body;
+
+      if (!password) {
+        return res.status(400).json({ message: "Password is required" });
+      }
+
+      try {
+        const usersCollection = db.collection("users");
+
+        const result = await usersCollection.updateOne(
+          { email },
+          { $set: { password } }
+        );
+
+        if (result.matchedCount === 0) {
+          return res.status(404).json({ message: "User not found" });
+        }
+
+        res.status(200).json({ message: "Password updated successfully" });
+      } catch (error) {
+        res.status(500).json({ message: "Failed to update password", error });
+      }
+    });
+
     // Ping to Confirm MongoDB Connection
     await client.db("admin").command({ ping: 1 });
     console.log("You successfully connected to MongoDB!");
